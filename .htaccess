@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /ss21/ss21/
+RewriteBase /MVC_Shop/
 
 # Bỏ qua xử lý các file ảnh, JS, CSS – cho load trực tiếp
 RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|webp|svg|css|js)$ [NC]
