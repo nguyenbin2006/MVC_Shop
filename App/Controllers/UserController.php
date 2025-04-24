@@ -60,8 +60,10 @@ class UserController
             if ($user && password_verify($password, $user['password'])) {
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
+
                 $config = require 'config.php';
                 $baseURL = $config['baseURL'];
+                
                 header("Location: " . $baseURL . 'home/index');// về trang chủ
                 exit;
             } else {
